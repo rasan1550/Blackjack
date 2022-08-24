@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family:  var(--font-family);
+    background: url(../img/bg.jpg) no-repeat center / cover;
+    color: var(--text-color);
+}
+// Preloader Styles End
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+// Helper Classes
+.container{
+    max-width: 992px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    @include breakpoint-up(small){
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    @include breakpoint-down(medium){
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    @include breakpoint-up(large){
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    @include breakpoint-up(x-large){
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.btn{
+    font-size: var(--fz-sm);
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    &-blue{
+        background-color: #4D96FF;
+        &:hover{
+            background-color: #4d97ffe8;
+        }
+    }
+    &-yellow{
+        background-color: #FFD124;
+        margin: 0 0.5rem;
+        &:hover{
+            background-color: #ffd024e9;
+        }
+    }
+    &-red{
+        background-color: #FD5D5D;
+        &:hover{
+            background-color: #fd5d5ded;
+        }
+    }
+}

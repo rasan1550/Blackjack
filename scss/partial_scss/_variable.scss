@@ -1,0 +1,25 @@
+@import "./mixin";
+:root{
+    --font-family : 'Roboto', sans-serif;
+    --text-color : #EEF2FF;
+    --fz-sm : 1rem;
+    --fz-md : 1.25rem;
+    --fz-lg : 1.5rem;
+    --fz-xl : 2.25rem;
+}
+@include breakpoint-down(x-small){
+    :root{
+        --fz-sm : 1rem;
+        --fz-md : 1.25rem;
+        --fz-lg : 1.4rem;
+        --fz-xl : 2rem;
+    }
+}
+@include breakpoint-up(large){
+    :root{
+        --fz-sm : 1.25rem;
+        --fz-md : 1.5rem;
+        --fz-lg : 1.65rem;
+        --fz-xl : 2.75rem;
+    }
+}

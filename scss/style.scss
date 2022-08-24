@@ -1,0 +1,35 @@
+/*
+====================
+Template Name : Blackjack
+Template URI : 
+Description : 
+Author : Rakib Hasan
+Author URI : https://www.facebook.com/profile.php?id=100034617150269
+Version : 1.0
+==================== 
+*/
+
+/* None Index SCSS Files
+1. Vartiable SCSS
+2. Mixin SCSS
+*/
+
+// ==================== Variable SCSS ====================
+@import "./partial_scss/variable";
+
+// ==================== Mixin SCSS ====================
+@import "./partial_scss/mixin";
+
+/* SCSS Index Files
+1. Tamplet Default SCSS
+2. Home SCSs
+*/
+
+// ==================== 1.Template Default SCSS ====================
+@import "./partial_scss/global";
+
+// ==================== 2.Home SCSS ====================
+@import "./section_scss/home";
+
+// ==================== 3.Popup SCSS ====================
+@import "./section_scss/preloader-popup";

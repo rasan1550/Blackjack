@@ -1,0 +1,19 @@
+$breakpoints-down: (
+    'x-small' : 320px,
+);
+@mixin breakpoint-down($size) {
+    @media (max-width : map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+$breakpoints-up: (
+    'small' : 576px,
+    'medium' : 7687px,
+    'large' : 992px,
+    'x-large' : 1050px,
+);
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}

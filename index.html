@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Link Here -->
+    <link rel="shortcut icon" href="./dist/img/favicon.png" type="image/x-icon">
+    <title>Blackjack</title>
+    <!-- Custom CSS Link Here -->
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+<body>
+    <!-- ============== Preloader ============== -->
+    <div class="preloader" id="loader">
+        <div class="loading">
+        <div class="bounceball"></div>
+        <div class="text">NOW LOADING</div>
+        </div>
+    </div>
+    <!-- ==============Preloader End ============== -->
+
+    <!-- ============== Blackjack ============== -->
+    <section class="blackjack">
+        <div class="container">
+            <div class="blackjack__container">
+                <h1 class="blackjack__heading">Blackjack</h1>
+                <h3 class="blackjack__results"><span id="results">Let's Play</span></h3>
+                <div class="blackjack__row-1">
+                    <div class="blackjack__player" id="player">
+                        <h2>You : <span id="player-score">0</span></h2>
+                    </div>
+                    <div class="blackjack__dealer" id="dealer">
+                        <h2>Dealer : <span id="dealer-score">0</span></h2>
+                    </div>
+                </div>
+                <div class="blackjack__row-2">
+                    <div>
+                        <button class="btn btn-blue" id="hit-button">Hit</button>
+                        <button class="btn btn-yellow" id="stand-button">Stand</button>
+                        <button class="btn btn-red" id="deal-button">Deal</button>
+                    </div>
+                </div>
+                <div class="blackjack__row-3">
+                    <table>
+                        <tr>
+                            <th>Win</th>
+                            <th>Loses</th>
+                            <th>Draws</th>
+                        </tr>
+                        <tr>
+                            <td><span id="wins">0</span></td>
+                            <td><span id="loses">0</span></td>
+                            <td><span id="draws">0</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============== Blackjack ============== -->
+
+    <!-- ============== Popup Modal ============== -->
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <button class="popup__close" id="popup-close">&times;</button>
+            <h2 class="popup__title">About Blackjack</h2>
+            <p class="popup__description">
+                This game is build for fun purposes only. Player will be playing aginst the Dealer.
+            </p>
+            <p class="popup__description">
+                Player needs to score more then the Dealer to win the game. Player must score under 22 and if the Player score more than 21 then the Player will bust and the Dealer will be the winner. If both the Player & the Dealer score more then 21 and bust then the game will draw.
+            </p>
+            <p class="popup__description">
+                The game starts by pressing the Hit button. Player will press it multiple times to score the highest under 22 and to start the Dealer's turn the Player will press the Stand button. When the Dealer's turn end the game will show the result. And to start the game agian the Player will the Deal button.
+            </p>
+        </div>
+    </div>
+    <!-- ============== Popup Modal End ============== -->
+     <script src="./dist/js/script.js"></script>
+</body>
+</html>

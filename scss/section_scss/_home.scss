@@ -1,0 +1,58 @@
+.blackjack{
+    &__container{
+        padding: 1rem 0 2rem;
+        text-align: center;
+    }
+    &__heading{
+        font-size: var(--fz-xl);
+        margin-bottom: 0.5rem;
+    }
+    &__results{
+        font-size: var(--fz-lg);
+        margin-bottom: 0.5rem;
+        @include breakpoint-up(small){
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__row-1{
+        div{
+            min-height: 150px;
+            h2{
+                font-size: var(--fz-md);
+                margin-bottom: 1rem;
+            }
+            img{
+                margin: 5px;
+                width: 55px;
+                @include breakpoint-up(small){
+                    width: 72px;
+                    height: 110px;
+                    margin: 10;
+                }
+            }
+        }
+        @include breakpoint-up(small){
+            min-height: 350px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            div{
+                flex: 1;
+            }
+        }
+    }
+    &__row-3{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        table,th,td{
+            text-align: center;
+            border: 1px solid var(--text-color);
+        }
+        th,td{
+            font-size: var(--fz-sm);
+            padding: 5px;
+        }
+    }
+
+}
