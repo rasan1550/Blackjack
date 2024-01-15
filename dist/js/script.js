@@ -62,7 +62,7 @@ function showCard(active,card){
     if(active['score'] <= 21){
         let cardImg = document.createElement('img')
         document.querySelector(active['div']).appendChild(cardImg)
-        cardImg.src = `dist/img/spade-${card}.png`
+        cardImg.src = `dist/img/spade-${card}.webp`
         hitSound.play()
     }
 }
